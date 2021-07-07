@@ -2,7 +2,7 @@ import requests
 import pytest
 
 
-class TestUserAgent:
+class TestUser_Agent:
     data = [
         (
             {
@@ -32,7 +32,7 @@ class TestUserAgent:
     ]
 
     @pytest.mark.parametrize('data', data)
-    def test_user_agent_one(self, data):
+    def test_user_agent(self, data):
         user_agent = data['user_agent']
         expected_platform = data['expected_platform']
         expected_browser = data['expected_browser']
